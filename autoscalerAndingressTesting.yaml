@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hostname-app
 spec:
-  replicas: 2
+  replicas: 18
   selector:
     matchLabels:
       app: hostname-app
@@ -33,7 +33,7 @@ kind: Deployment
 metadata:
   name: apache-app
 spec:
-  replicas: 2
+  replicas: 18
   selector:
     matchLabels:
       app: apache-app
