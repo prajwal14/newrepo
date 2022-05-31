@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: path-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /hostname
+        backend:
+          serviceName: hostname-svc
+          servicePort: 80
+      - path: /apache
+        backend:
+          serviceName: apache-svc
+          servicePort: 80
